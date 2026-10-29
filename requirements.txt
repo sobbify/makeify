@@ -1,0 +1,33 @@
+# Install a CUDA-compatible PyTorch build first when required:
+# https://pytorch.org/get-started/locally/
+torch
+torchvision
+
+# VGGT / geometry
+roma
+einops
+scipy
+trimesh
+
+# UI and visualization
+gradio==4.4.1
+matplotlib
+pyglet<2
+
+# Image/video and utilities
+opencv-python
+numpy
+Pillow
+requests
+tqdm
+
+# Optional training/monitoring utilities
+tensorboard
+
+# Hugging Face model download/access
+huggingface-hub[torch]>=0.22
+
+# Gradio server dependencies
+fastapi
+uvicorn[standard]
+python-multipart
